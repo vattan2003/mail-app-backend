@@ -19,7 +19,7 @@ mongoose.connect("mongodb+srv://vattan:vkbrodhers@cluster0.lzuqill.mongodb.net/p
 const credential=mongoose.model("credential",{},"bulkmail")
 
 
-app.post("/sendmail", function (req, res) {
+app.post("https://mail-app-frontend-iota.vercel.app/", function (req, res) {
 
     const msg = req.body.msg
     var emailList = req.body.emailList
